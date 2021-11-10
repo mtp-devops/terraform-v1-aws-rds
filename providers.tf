@@ -21,4 +21,5 @@ terraform {
 output "this_db_instance" {
   description = "The database resource"
   value       = module.db_instance.this_db_instance
+  sensitive = true
 }
